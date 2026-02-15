@@ -22,3 +22,5 @@ conversion_log.txt
 *.njsproj
 *.sln
 *.sw?
+.vscode/
+dev-app-update.yml
