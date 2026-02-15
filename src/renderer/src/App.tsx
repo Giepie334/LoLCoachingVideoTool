@@ -297,8 +297,8 @@ const App: React.FC = () => {
       // ★高画質: 16Mbps映像 + 320kbps音声
       const mainRecorder = new MediaRecorder(combinedStream, {
         mimeType,
-        videoBitsPerSecond: 16_000_000,
-        audioBitsPerSecond: 320_000
+        videoBitsPerSecond: 6_000_000, // 6Mbps per user request
+        audioBitsPerSecond: 128_000
       });
       mainChunksRef.current = [];
       mainRecorder.ondataavailable = (e) => { if (e.data.size > 0) mainChunksRef.current.push(e.data); };
