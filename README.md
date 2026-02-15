@@ -1,46 +1,47 @@
-# my-lol-tool
+# LoLCoachingVideoTool
 
-An Electron application with React and TypeScript
+LoLのコーチング動画を作成するためのElectronアプリケーション（React + TypeScript）です。
+録画機能などを備え、スムーズなコーチング動画制作を支援します。
 
-## Recommended IDE Setup
+## 📥 インストール方法
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+1. [Releasesページ](https://github.com/Giepie334/LoLCoachingVideoTool/releases) から最新バージョンのインストーラー（`LoLCoachingVideoTool-Setup-x.x.x.exe`）をダウンロードしてください。
+2. ダウンロードしたファイルを実行してインストールしてください。
+   - ※「WindowsによってPCが保護されました」という警告が出ることがありますが、個人開発のため署名がないことが原因です。「詳細情報」をクリックし、「実行」を選択してください。
 
-## Project Setup
+## 🚀 使い方
 
-### Install
+1. アプリを起動します。
+2. 必要な動画ファイルを読み込むか、画面に従って操作してください。
+    - （具体的な機能説明をここに追記できます）
+
+## 🛠️ 開発者向け情報
+
+このプロジェクトは以下の構成で作られています：
+- **Electron**: デスクトップアプリ基盤
+- **React**: UIフレームワーク
+- **TypeScript**: 開発言語
+- **Vite**: ビルドツール
+
+### 開発環境のセットアップ
 
 ```bash
-$ npm install
+# インストール
+npm install
+
+# 開発サーバーの起動
+npm run dev
+
+#Windowsビルド
+npm run build:win
 ```
 
-### Development
+## ⚠️ 免責事項 (Disclaimer)
 
-```bash
-$ npm run dev
-```
+本ソフトウェアは「現状のまま」提供されるものであり、明示または黙示を問わず、商品性、特定の目的への適合性、権利侵害がないことの保証を含め、いかなる保証もありません。
+作者または著作権者は、契約、不法行為、その他の行為にかかわらず、本ソフトウェアまたはその使用やその他の扱いから生じる、いかなる請求、損害、その他の責任についても責任を負いません。
 
-### Build
+## 📄 ライセンス
 
-```bash
-# For windows
-$ npm run build:win
-
-# For macOS
-$ npm run build:mac
-
-# For Linux
-$ npm run build:linux
-```
-
-## License & Disclaimer
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-**Disclaimer:**
-This software is provided "as is", without warranty of any kind. The authors are not responsible for any damage or data loss that may occur from using this application. Use at your own risk.
-
-## Distribution & Costs
-
-- **Costs**: This application uses free open-source libraries. Distributing via GitHub is generally free for public repositories. If you use a private repository, be aware of GitHub Actions minute limits. Use of the "winCodeSign" tool in the build pipeline is free but relies on external servers.
-- **Code Signing**: The generated installer is **not signed** with a paid certificate. Therefore, when users try to install it, Windows SmartScreen will likely display a warning ("Windows protected your PC"). This is normal for unsigned software. To remove this warning, you would need to purchase a code signing certificate from a certificate authority.
+このプロジェクトは [MIT License](LICENSE) の下でライセンスされています。
+Copyright (c) 2026 Giepie334
